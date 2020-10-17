@@ -1,13 +1,37 @@
-div{
+.box{
     border: solid;
-    margin: 30px;
+    margin: 3px;
+    padding: 5px;
+    text-align: justify;
+}
+h1{
+    text-align: center;
 }
 
-@media only screen and (max-width: 1024px) {
+/* !! order of max-width -> large to small */
+
+@media only screen and (max-width: 1024px) {    /* for tablets */
     body{
-        background-color: green;
-        font-size: 20px;
+        background-color: rgba(1, 109, 1, 0.61);
+        font-size: 14px;
     }
+    .container{
+        display: flex;
+       flex-wrap: wrap;
+       justify-content: space-between;
+        
+    }
+    #small{
+        flex-basis: 60%;
+    }
+    #medium{
+        flex-basis: 30%;
+    }
+    #large{
+        flex-basis: 100%;
+    }
+    /*  exercise 2 - display/hide elements
+
     #small{
         display: none;
     }
@@ -17,14 +41,20 @@ div{
     #large{
         display: none;
     }
-
+    */
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 480px) {     /* for smartphones */
     body{
-        background-color: red;
+        background-color: rgb(153, 45, 45);
         font-size: 10px;
     }
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    /*
     #small{
         display: block;
     }
@@ -34,12 +64,19 @@ div{
     #large{
         display: none;
     }
+    */
 }
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1024px) {    /* for computers */
     body{
-        background-color: blue;
-        font-size: 30px;
+        background-color: rgb(56, 56, 126);
+        font-size: 20px;
     }
+    .container{
+        display: flex;
+        
+    }
+    
+    /*
     #small{
         display: none;
     }
@@ -49,4 +86,5 @@ div{
     #large{
         display: block;
     }
+    */
 }
