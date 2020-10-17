@@ -8,7 +8,7 @@ h1{
     text-align: center;
 }
 
-/* !! order of max-width -> large to small */
+/* !! order for max-width -> large to small */
 
 @media only screen and (max-width: 1024px) {    /* for tablets */
     body{
